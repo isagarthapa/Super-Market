@@ -1,7 +1,6 @@
 {
   "name": "superm-solution-vite-react18-usefetch",
   "private": true,
-
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -13,6 +12,7 @@
   "dependencies": {
     "@stripe/stripe-js": "^1.52.1",
     "clsx": "^1.2.1",
+    "dotenv": "^16.4.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.1"

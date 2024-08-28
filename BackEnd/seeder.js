@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import colors from "colors";
+import products from "./data/products.js";
 import Product from "./models/productModel.js";
 import connectDB from "./config/db.js";
 import fetch from "node-fetch";

@@ -1,17 +1,13 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react/prop-types */
 import { useState, useEffect } from "react";
-import dotenv from 'dotenv';
-dotenv.config();
 import Product from "./Product";
 import useFetch from "./useFetch";
 import Loader from "./Loader";
 
 export default function Products(props) {
-  const [products, setProducts] = useState([]);  
-  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || "http://localhost:5000/api/";
-
-  const { get, loading } = useFetch(API_BASE_URL);
+  const [products, setProducts] = useState([]);
+  const { get, loading } = useFetch("http://localhost:5000/api/");
 
   useEffect(() => {
     get("products")
@@ -20,7 +16,7 @@ export default function Products(props) {
         setProducts(data);
       })
       .catch((error) => console.log("Could not load products", error));
-  }, [get]);
+  }, []);
 
   return (
     <div className="products-layout">

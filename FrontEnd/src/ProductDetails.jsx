@@ -35,7 +35,7 @@ export default function ProductDetails({onProductAdd}) {
         <div className="tabs">
           <ul>
             <li>
-              <NavLink className={({ isActive }) => (isActive ? "tab-active" : "")} to="." end>
+              <NavLink className={({ isActive }) => (isActive ? "tab-active" : "")} to="" end>
                 Details
               </NavLink>
             </li>

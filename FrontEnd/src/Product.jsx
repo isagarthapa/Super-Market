@@ -45,7 +45,7 @@ export default function Product(props) {
           )}
         </div>
         <Button outline onClick={() => props.onProductAdd(details)}>
-          ${details.price}
+        ₹{details.price}
         </Button>
       </div>
     </div>

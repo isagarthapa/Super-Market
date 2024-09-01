@@ -1,6 +1,6 @@
 const products = [
     {
-        _id: '1',
+        
         name:"Tomato",
         image:"https://res.cloudinary.com/dbfn5lnvx/image/upload/q_auto/v1607769454/react-tutorial/products/final/tomato.png",
         description: "1 piece of tomato",
@@ -15,7 +15,7 @@ const products = [
         price_id: "price_1HxW4YGuhXEITAutgcWugXH7"
     },    
     {
-        _id: '2',
+        
         name:"Pineapple",
         image:"https://res.cloudinary.com/dbfn5lnvx/image/upload/q_auto/v1607769454/react-tutorial/products/final/pineapple.png",
         description: "500g pineapple",
@@ -30,7 +30,7 @@ const products = [
         price_id: "price_1HxW59GuhXEITAutCwoYZoOJ"
     },    
     {
-        _id: '3',
+        
         name:"Cheese",
         image:"https://res.cloudinary.com/dbfn5lnvx/image/upload/q_auto/v1607769454/react-tutorial/products/final/cheese.png",
         description: "200g cheese block",
@@ -45,7 +45,7 @@ const products = [
         price_id: "price_1HxW4YGuhXEITAutgcWugXH7"
     },
     {
-        _id: '4',
+        
         name:"Milk",
         image:"https://res.cloudinary.com/dbfn5lnvx/image/upload/q_auto/v1607769454/react-tutorial/products/final/milk.png",
         description: "200ml milk bottle",

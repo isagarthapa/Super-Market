@@ -27,10 +27,10 @@ app.use('/api/products', productsroutes);
 if (process.env.NODE_ENV === 'production') {
     const __dirname = path.resolve();
     
-    app.use(express.static(path.join(__dirname, '/FrontEnd/build')));
+    app.use(express.static(path.join(__dirname, '..','FrontEnd', 'dist')));
   
     app.get('*', (req, res) =>
-      res.sendFile(path.resolve(__dirname, 'FrontEnd', 'build', 'index.html'))
+      res.sendFile(path.resolve(__dirname,'..', 'FrontEnd', 'dist', 'index.html'))
     );
   } else {    
     app.get('/', (req, res) => {

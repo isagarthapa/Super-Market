@@ -4,7 +4,7 @@ import useFetch from "./useFetch";
 
 export default function ProductDetails({onProductAdd}) {
   const [product, setProduct] = useState({}); 
-  const { get } = useFetch("http://localhost:5000/api/");
+  const { get } = useFetch(`${import.meta.env.VITE_API_URL}/api/`);
   const { id } = useParams();
 
   useEffect(() => {

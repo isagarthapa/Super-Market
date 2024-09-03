@@ -7,7 +7,7 @@ import Loader from "./Loader";
 
 export default function Products(props) {
   const [products, setProducts] = useState([]);
-  const { get, loading } = useFetch("http://localhost:5000/api/");
+  const { get, loading } = useFetch(`${import.meta.env.VITE_API_URL}/api/`); 
 
   useEffect(() => {
     get("products")
@@ -16,7 +16,7 @@ export default function Products(props) {
         setProducts(data);
       })
       .catch((error) => console.log("Could not load products", error));
-  }, []);
+  }, [get]);
 
   return (
     <div className="products-layout">

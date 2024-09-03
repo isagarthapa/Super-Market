@@ -11,7 +11,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "node BackEnd/seeder.js",
     "data:destroy": "node BackEnd/seeder.js -d",
-    "build": "npm install && npm install --prefix FrontEnd && npm run build --prefix FrontEnd"
+    "build": "npm install --prefix FrontEnd && npm run build --prefix FrontEnd"
   },
   "author": "Sagar Thapa",
   "license": "ISC",
